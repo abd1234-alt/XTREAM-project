@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+    animation: body 2s ease-in-out;
+}
+
+@keyframes body {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        /* opacity: 0.5; */
+        
+    }
+
+    100% {
+        opacity: 1;
+        filter: blur(100%);
+    }
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+.icon-header {
+    color: white;
+    padding: 1.5vw 4vw;
+    background-color: #000000;
+}
+
+.icon-header, .xtream-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.icon-header ul, .xtream-header ul {
+    display: flex;
+    list-style: none; 
+    font-size: 1.2vw;
+}
+
+.icon-header ul {
+    align-items: center;
+    gap: 2vw;
+}
+
+.xtream-header {
+    background-color: #ffffff;
+    padding: .4vw 4vw;
+    box-shadow: 0.1rem 0.1rem 2.5rem 0.2rem #00000043;
+}
+
+.xtream-header .x-logo {
+    font-size: 4vw;
+    color: #94C93B;
+}
+
+h1 {
+    font-size: 1.8vw;
+    transform: translateX(-19vw);
+}
+
+.xtream-header ul {
+    gap: 3vw;
+    font-weight: 600;
+}
+
+.xtream-header ul li {
+    transition: all 0.8s linear;
+}
+
+.xtream-header ul li:hover {
+    background-color: #94C93B;
+}
+
+/* hero section */
+.hero-image {
+    height: 95vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-image img {
+    width: 100%;
+}
+
+.hero-text {
+    transform: translateY(-25rem);
+    margin-left: 15vw;
+}
+
+.hero-text h2 {
+    font-size: 4vw;
+    letter-spacing: .6vw;
+    color: #94C93B;
+}
+
+.hero-text p {
+    font-size: 1.5vw;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+/* three pillars */
+.three-pillars {
+    transform: translateY(-10rem);
+    position: relative;
+    top: 0;
+}
+
+.three-pillars, .pillar-box-2 {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 3rem;
+    
+}
+
+.three-pillars-text {
+    text-align: center;
+    width: 48vw;
+    margin: 0 auto;
+    margin-bottom: 5vw;
+}
+
+.three-pillars h2:first-child, .pillar-box-2 h2:first-child {
+    font-size: 2.5vw;
+    font-weight: 900;
+}
+
+.three-pillars, .pillar-box-2 h2 {
+    font-size: 1.5vw;
+    margin-bottom: 1.5vw;
+}
+
+.three-pillars-text p {
+    font-size: 1vw;
+}
+
+.pillar-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 3vw;
+}
+
+.box {
+    text-align: center;
+    width: 29vw;
+    background-color: #ffffff;
+    padding: 4vw 1vw;
+
+}
+
+.box-1, .box-2 {
+    transition: all 0.6s linear;
+}
+
+.box-1:hover {
+    transform:rotate(20deg);
+    box-shadow: 0.1rem 0.1rem 2rem 0.1rem rgba(0, 0, 0, 0.205);
+
+}
+
+.pillar-icon .icon {
+    font-size: 5vw;
+    color: #699a15;
+}
+
+.box p {
+    font-size: 1vw;
+    line-height: 1.5vw;
+}
+
+.pillar-box-2 {
+    transform: translateY(-12rem);
+    background-color: #699a15;
+    position: absolute;
+}
+
+.box-2 {
+    padding: 0;
+    text-align: left;
+}
+
+.box-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.box-image img {
+    width: 100%;
+}
+
+.box-image h3 {
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.598);
+    font-size: 1.5vw;
+    transform: translateY(-4vw);
+    padding: 1vw 1.2vw;
+}
+
+.box-2 p {
+    transform: translateY(-3vw);
+    padding-left: 1vw;
+}
+
+.box-2:hover {
+    transform: scale(1.1);
+}
+
+
+/* MEDIA QUERIES */
+@media all and (max-width: 499px) {
+    .three-pillars {
+        transform: translateY(-23rem);
+    }
+
+    .hero-text {
+        transform: translateY(-30rem);
+    }
+
+    .pillar-box-2 {
+        transform: translateY(-25rem);
+    }
+}
+
+@media all and (max-width: 303px) {
+    .three-pillars {
+        transform: translateY(-28rem);
+    }
+
+    .pillar-box-2 {
+        transform: translateY(-30rem);
+    }
+}
+
+@media all and (max-width: 207px) {
+    .three-pillars {
+        transform: translateY(-31rem);
+    }
+
+    .hero-text {
+        transform: translateY(-33rem);
+    }
+
+    .pillar-box-2 {
+        transform: translateY(-32rem);
+    }
+}
+
